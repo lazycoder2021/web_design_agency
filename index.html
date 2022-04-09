@@ -1,0 +1,1010 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Ubuntu', sans-serif;
+            
+        }
+
+
+
+        .navbar {
+            height: 70px;
+            width: 100%;
+            background-color: #3b3c36;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .navlinks {
+            display: flex;
+            //border:1px solid white;
+            text-transform: uppercase;
+            font-size: 22px;
+            margin-right: 20px;
+        }
+
+            .navlinks p {
+                margin-right: 25px;
+            }
+
+        .logo {
+            font-size: 20px;
+            margin-left: 20px;
+        }
+
+
+
+
+        .container1 {
+            height: 100vh;
+            border: 1px solid black;
+            width: 100%;
+            background-image: url('mountains.jpg');
+            background-size: cover;
+            background-position: center center;
+            position: relative;
+        }
+
+        .container1_content {
+            //border: 10px solid black;
+            height: 350px;
+            width: 400px;
+            position: absolute;
+            left: 1000px;
+            top: 200px;
+        }
+
+        .container1_header {
+            background-color: black;
+            margin-bottom: 10px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .container1_content {
+            background-color: #008256;
+            position: relative;
+        }
+
+        .header1 {
+            width: 460px;
+            position: absolute;
+            top: 100px;
+            right: 60px;
+            padding: 4px 2px;
+            font-size: 30px;
+        }
+
+        .header2 {
+            top: 170px;
+            right: 60px;
+            position: absolute;
+            width: 260px;
+            padding: 4px 2px;
+            font-size: 30px;
+        }
+
+        .learn-more {
+            position: absolute;
+            top: 250px;
+            right: 80px;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            //border:1px solid white;
+            margin-top: 10px
+        }
+
+        .moreIcon {
+            font-size: 32px;
+            margin-right: 15px;
+            color: white;
+        }
+
+
+        /* container 2 styling */
+
+        .container2 {
+            //border:1px solid black;
+            height: 65vh;
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        .container2_leftpane, .container2_rightpane {
+            width: 50%;
+            height: 100%;
+            //border:1px solid green;
+        }
+
+            .container2_rightpane img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .container2_content {
+            //border:1px solid red;
+            width: 50%;
+            position: absolute;
+            top: 200px;
+            left: 210px;
+        }
+
+            .container2_content h2 {
+                font-size: 60px;
+            }
+
+        .designs {
+            background-color: #008256;
+            color: white;
+            width: 480px;
+        }
+
+        /* container 3 styling */
+
+        .container3 {
+            height: 65vh;
+            width: 80%;
+            margin: 10px auto;
+            //border:1px solid black;
+            position: relative;
+        }
+
+        .container3_part1, .container3_part2, .container3_part3 {
+            display: flex;
+            //border: 1px solid black;
+            width: 400px;
+            font-size: 20px;
+        }
+
+        .container3_icon {
+            margin-right: 20px;
+        }
+
+        .comm {
+            font-size: 64px;
+        }
+
+        .container3_part1 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .container3_part2 {
+            position: absolute;
+            top: 150px;
+            left: 400px;
+        }
+
+        .container3_part3 {
+            position: absolute;
+            top: 300px;
+            left: 800px;
+        }
+
+        .z {
+            color: #008256;
+            transition: 0.4s;
+        }
+
+
+
+            .z:hover {
+                color: black;
+            }
+
+
+        /* container 4*/
+
+        .container4 {
+            height: 100vh;
+            width: 100%;
+            //border: 10px solid black;
+        }
+
+        .owl-carousel {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            //border: 10px solid red;
+        }
+
+
+        .image-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner {
+            position: absolute;
+            width: 400px;
+            height: 420px;
+            background-color: black;
+            opacity: 0.7;
+            top: 200px;
+            left: 950px;
+        }
+
+
+        .navbar.scrolling {
+            opacity: 0.7;
+            background-color: #3b3c36;
+        }
+
+        .banner-wrapper {
+            margin-top: 100px;
+        }
+
+        .banner-header {
+            background-color: #008256;
+            opacity: 1;
+            width: 300px;
+            padding: 10px 30px;
+            text-align: center;
+            font-size: 20px;
+            margin-left: -70px;
+            z-index: 3;
+        }
+
+        .banner-paragraph {
+            margin-left: 50px;
+            margin-top: 20px;
+            line-height: 25px;
+        }
+
+        .banner-button {
+            margin-top: 30px;
+            margin-left: 50px;
+            border: 1px solid white;
+            width: 100px;
+            text-align: center;
+            padding: 8px 10px;
+            transition: 0.4s;
+        }
+
+            .banner-button:hover {
+                background-color: #008256;
+                color: white;
+                border: none;
+            }
+
+
+        /* container 5*/
+
+        .container5 {
+            height: 80vh;
+            width: 70%;
+            margin: 50px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container5_content {
+            height: 100%;
+            width: 40%;
+            //border:10px solid green;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 120px;
+        }
+
+        .container5_image {
+            height: 100%;
+            width: 60%;
+            //border: 10px solid red;
+        }
+
+            .container5_image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .customers {
+            background-color: #008256;
+            color: white;
+            padding-left: 10px;
+            padding-right: 30px;
+        }
+
+        /* CONTAINER 6*/
+
+        .container6 {
+            height: 30vh;
+            width: 70%;
+            margin: 50px auto;
+            //border:10px solid black;
+        }
+
+        .slider-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            //border:10px solid red;
+        }
+
+        .slider-left, .slider-right {
+            height: 100%;
+            //border:1px solid black;
+        }
+
+        .slider-left {
+            width: 40%;
+        }
+
+        .slider-right {
+            width: 60%;
+        }
+
+        .slider-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .slider-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .slider-left-img {
+            width: 70px;
+            height: 70px;
+        }
+
+            .slider-left-img img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+
+        .slider-left-text {
+            margin-top: 5px;
+        }
+
+            .slider-left-text h2 {
+                margin: 10px 0px;
+            }
+
+            .slider-left-text p {
+                font-size: 20px;
+            }
+
+        .quote {
+            font-size: 32px;
+            color: #008256;
+        }
+
+        .slider-text {
+            margin-top: 20px;
+        }
+
+            .slider-text p {
+                font-size: 20px;
+                line-height: 30px;
+            }
+
+        /* CONTAINER 7*/
+
+        .container7 {
+            height: 80vh;
+            width: 100%;
+            border: 1px solid black;
+            background-color: #202020;
+            margin-bottom: 100px;
+        }
+
+            .container7 span {
+                display: block;
+            }
+
+        .container7wrapper {
+            width: 80%;
+            height: 85%;
+            margin: 50px auto;
+            //border:1px solid white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container7left, .container7right {
+            width: 40%;
+            //border:5px dotted white;
+            margin: 0px auto;
+            height: 90%;
+        }
+
+        .container7left {
+        }
+
+        .container7leftcontent {
+            width: 400px;
+            height: 350px;
+            background-color: #008256;
+            color: white;
+        }
+
+        .container7rightcontent {
+            width: 100%;
+            height: 350px;
+            //background-color: #008256;
+            color: white;
+            //border:3px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+            .container7rightcontent h2 {
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+        .container7righttop, .container7rightbottom {
+            height: 50%;
+            width: 100%;
+            //border:1px solid white;
+        }
+
+        .container7righttop {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .container7stat1, .container7stat2 {
+            //border:1px solid white;
+            width: 50%;
+            height: 70%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container7stat {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container7leftcontent span {
+            display: block;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 30px;
+            font-size: 20px;
+        }
+
+        .container7leftcontent h2 {
+            padding-top: 5px;
+            padding-left: 50px;
+            padding-bottom: 30px;
+            font-size: 53px;
+            width: 700px;
+        }
+
+        .container7leftcontent p {
+            padding-top: 5px;
+            padding-left: 50px;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        /* container 8*/
+
+        .container8 {
+            width: 100%;
+            height: 100vh;
+            //border: 1px solid green;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+            //border:10px solid red;
+        }
+
+
+        
+
+        .eigthpane-header {
+            width: 100%;
+            height: 50px;
+            text-align: left;
+            margin-top: 100px;
+            margin-left: 140px;
+        }
+
+            .eighthpane-header h2 {
+                font-size: 45px;
+                margin-bottom: 10px;
+            }
+
+            .eighthpane-header .q {
+                color: crimson;
+            }
+
+        .eigthpane-content {
+            height: 80%;
+            width: 80%;
+            margin: 0px auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .eighthpane-content-left, .eighthpane-content-right {
+            //width: 50%;
+            height: 65%;
+            //border: 1px solid black;
+            margin-top: 50px;
+        }
+
+
+
+        .eighthpane-content-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 60%;
+        }
+
+        .eighthpane-content-right {
+            width: 40%;
+        }
+
+        .fcl1 h2 {
+            margin-bottom: 20px;
+            font-weight: 100;
+            font-size: 32px;
+        }
+
+        .fcl1 p {
+            font-size: 18px;
+            font-weight: 100;
+        }
+
+        .fcl2 {
+            //border:1px solid black;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+
+        .fca, .fcb, .fcc {
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+            .fca span, .fcb span, .fcc span {
+                padding-left: 30px;
+            }
+
+        .marker, .phone, .envelope {
+            font-size: 32px;
+        }
+
+
+
+        .eighthpane-content-right form {
+            //border:1px solid black;
+            margin-left: 20px;
+        }
+
+        .eighthpane-content-right input {
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        .eighthpane-content-right textarea {
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            border-top: 0px;
+            border-right: 0px;
+            border-left: 0px;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        .btn {
+            margin-top: 10px;
+            width: 90%;
+            margin: 15px auto;
+            font-size: 16px;
+            padding: 10px 0px;
+            border-radius: 20px;
+            border: 2px solid #008256;
+            color: #008256;
+            background-color: white;
+            transition: 0.4s;
+        }
+
+            .btn:hover {
+                background-color: #008256;
+                color: white;
+            }
+
+        .eighthpane {
+            width: 100%;
+            height: 100vh;
+            //border: 10px solid blue;
+            //position: absolute;
+            top: 0px;
+            //left: 5%;
+        }
+
+        .wrapper{
+           
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+    <div class="container1">
+        <div class="navbar">
+            <div class="logo"><h2>M</h2></div>
+            <div class="navlinks">
+                <p>Home</p>
+                <p>About</p>
+                <p>Work</p>
+                <p>Contact</p>
+            </div>
+        </div>
+        <div class="container1_content" data-aos="fade-left" data-aos-duration="900">
+            <div class="container1_header header1">
+                <h2>NEW DESIGN AGENCY </h2>
+            </div>
+            <div class="container1_header header2">
+                <h2>IN CHENNAI</h2>
+            </div>
+            <div class="learn-more">
+                <i class="fa fa-chevron-circle-right moreIcon"></i>
+                <span>Learn More</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="container2_leftpane" data-aos="fade-right" data-aos-duration="600" style="z-index:2;">
+            <div class="container2_content">
+                <h2 class="creativity">CREATIVITY</h2>
+                <h2 class="designs">IN OUR DESIGNS</h2>
+            </div>
+        </div>
+        <div class="container2_rightpane" data-aos="fade-left" data-aos-duration="600">
+            <img src="laptop.jpg" />
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="container3_part1" data-aos="fade-right" data-aos-duration="300">
+            <div class="container3_icon">
+                <i class="fa fa-heart comm z"></i>
+            </div>
+            <div class="container3_text">
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy</p>
+            </div>
+        </div>
+        <div class="container3_part2" data-aos="fade-right" data-aos-duration="600">
+            <div class="container3_icon comm">
+                <i class="fa fa-birthday-cake z"></i>
+            </div>
+            <div class="container3_text">
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy</p>
+            </div>
+        </div>
+        <div class="container3_part3" data-aos="fade-right" data-aos-duration="900">
+            <div class="container3_icon comm">
+                <i class="fa fa-coffee z"></i>
+            </div>
+            <div class="container3_text">
+                <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry’s standard dummy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="owl-carousel">
+
+            <div class="image-wrapper">
+                <img src="pic1.jpg" class="owl-lazy" data-src="./pic1.jpg" />
+                <div class="banner">
+                    <div class="banner-wrapper" style="color:white;">
+                        <div class="banner-header">
+                            <h2>Product Branding Here</h2>
+                        </div>
+                        <div class="banner-paragraph">
+                            <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                        </div>
+                        <div class="banner-button">
+                            <p>Buy Now</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-wrapper">
+                <img src="pic2.jpg" class="owl-lazy" data-src="./pic2.jpg" />
+                <div class="banner" style="color:white;">
+                    <div class="banner-wrapper">
+                        <div class="banner-header">
+                            <h2>Product Branding Here</h2>
+                        </div>
+                        <div class="banner-paragraph">
+                            <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                        </div>
+                        <div class="banner-button">
+                            <p>Buy Now</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="image-wrapper">
+                <img src="pic3.jpg" class="owl-lazy" data-src="./pic3.jpg" />
+                <div class="banner" style="color:white;">
+                    <div class="banner-wrapper">
+                        <div class="banner-header">
+                            <h2>Product Branding Here</h2>
+                        </div>
+                        <div class="banner-paragraph">
+                            <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                        </div>
+                        <div class="banner-button">
+                            <p>Buy Now</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container5">
+        <div class="container5_content" data-aos="fade-right" data-aos-duration="600" style="z-index:8;">
+            <h2>HAPPY <span class="customers">CUSTOMERS</span></h2>
+        </div>
+        <div class="container5_image" data-aos="fade-left" data-aos-duration="600">
+            <img src="review1.jpg" />
+        </div>
+    </div>
+
+
+    <div class="container6">
+        <div class="owl-carousel">
+
+            <div class="slider-wrapper">
+                <div class="slider-left">
+                    <div class="slider-left-img">
+                        <img src="1.jpg" class="owl-lazy" data-src="./1.jpg" />
+                    </div>
+                    <div class="slider-left-text">
+                        <h2>Steve Harmison</h2>
+                        <p>Brussels, Germany</p>
+                    </div>
+                </div>
+                <div class="slider-right">
+                    <div class="slider-icon">
+                        <i class="fa fa-quote-left quote"></i>
+                    </div>
+                    <div class="slider-text">
+                        <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="slider-left">
+                    <div class="slider-left-img">
+                        <img src="2.jpg" class="owl-lazy" data-src="./2.jpg" />
+                    </div>
+                    <div class="slider-left-text">
+                        <h2>Steve Harmison</h2>
+                        <p>Brussels, Germany</p>
+                    </div>
+                </div>
+                <div class="slider-right">
+                    <div class="slider-icon">
+                        <i class="fa fa-quote-left quote"></i>
+                    </div>
+                    <div class="slider-text">
+                        <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="slider-left">
+                    <div class="slider-left-img">
+                        <img src="3.jpg" class="owl-lazy" data-src="./3.jpg" />
+                    </div>
+                    <div class="slider-left-text">
+                        <h2>Steve Harmison</h2>
+                        <p>Brussels, Germany</p>
+                    </div>
+                </div>
+                <div class="slider-right">
+                    <div class="slider-icon">
+                        <i class="fa fa-quote-left quote"></i>
+                    </div>
+                    <div class="slider-text">
+                        <p>One two three four, five six seven eight, nine ten eleven twelve, thirteen, fourteen, fifteen. One two three four, five six seven eight, nine ten.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container7">
+        <div class="container7wrapper" data-aos="fade-right" data-aos-duration="600">
+            <div class="container7left">
+                <div class="container7leftcontent">
+                    <span>Interesting Facts and Figures</span>
+                    <div class="container7leftheader">
+                        <h2>NEW AGENCY STATS</h2>
+                    </div>
+                    <div class="container7leftpara">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae egestas mi, vel dapibus diam mauris malesuada.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container7right">
+                <div class="container7rightcontent">
+                    <div class="container7righttop">
+                        <div class="container7stat1">
+                            <h2>125</h2>
+                            <span style="font-size:18px;">Happy Customers</span>
+                        </div>
+                        <div class="container7stat2">
+                            <h2>865</h2>
+                            <span style="font-size:18px;">Lines of Code</span>
+                        </div>
+                    </div>
+                    <div class="container7rightbottom">
+                        <div class="container7stat">
+                            <h2>510</h2>
+                            <span style="font-size:18px;">Project Completed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="container8">
+        <div class="eighthpane" data-aos="fade-left" data-aos-duration="600">
+            <div class="eigthpane-header">
+                <h2 style="font-size:45px;margin-bottom:10px;color:#008256;">Questions?</h2>
+                <h2 style="font-size:45px;margin-bottom:10px;">Let's Get In Touch</h2>
+            </div>
+            <div class="eigthpane-content">
+                <div class="eigthpane-content-left">
+                    <div class="fcl1">
+                        <h2>Warehouse Location</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
+                    </div>
+                    <div class="fcl2">
+                        <div class="fca">
+                            <i class="fa fa-map-marker marker"></i>
+                            <span>123 Park Avenue, New York, United States</span>
+                        </div>
+                        <div class="fcb">
+                            <i class="fa fa-phone phone"></i>
+                            <span>1234567890, 0987654321</span>
+                        </div>
+                        <div class="fcc">
+                            <i class="fa fa-envelope envelope"></i>
+                            <span>email@website.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="eighthpane-content-right">
+                    <form>
+                        <input type="text" class="name" placeholder="Name" />
+                        <input type="text" class="contact" placeholder="Contact No" />
+                        <input type="text" class="email" placeholder="Email" />
+                        <textarea class="message" placeholder="Type Your Message Here" cols="55" rows="5"></textarea>
+                        <button type="submit" class="btn">SUBMIT INFORMATION</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+
+        AOS.init();
+
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            lazyLoad: true,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplaySpeed: 500
+        })
+
+
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 700) {
+                $(".navbar").addClass("scrolling");
+            } else {
+                $(".navbar").removeClass("scrolling");
+            }
+        });
+
+
+
+    </script>
+
+</body>
+</html>
