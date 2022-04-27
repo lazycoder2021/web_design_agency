@@ -242,6 +242,8 @@
             height: 100%;
         }
 
+
+
         .banner {
             position: absolute;
             width: 400px;
@@ -678,7 +680,205 @@
         }
 
         .wrapper{
-           
+           border:1px solid black;
+           overflow:hidden;
+        }
+
+        @media only screen and (max-width:480px){
+            .navbar{
+                display:none;
+            }
+
+            .container1{
+                width:480px;
+            }
+
+            .container1_content {
+                
+                left: 150px;
+                width: 300px;
+                height: 350px;
+            }
+
+            .container1_content .container1_header h2{
+                font-size:25px;
+                
+            }
+
+            .header1{
+                right:100px;
+                width:270px;
+                text-align:right;
+            }
+
+            .header2{
+                width:150px;
+                right:120px;
+            }
+
+            /* container 2*/
+
+            .container2{
+                width:480px;
+                //border:10px solid green;
+            }
+
+            
+
+            .container2_leftpane{
+                width:30%;
+                height:100%
+            }
+
+            .container2_rightpane {
+                width: 70%;
+                height: 100%
+            }
+
+            .container2_rightpane img{
+                width:100%;
+            }
+
+            .container2_content h2{
+                font-size:30px;
+                //width:500px;
+            }
+
+            .container2_content{
+                left:0px;
+                width:480px;
+            }
+
+            .designs{
+                width:380px;
+            }
+
+            .container3{
+                margin-top:150px;
+            }
+
+            .container3_part1{
+                top:0px;
+            }
+
+            .container3_part2{
+                top:150px;
+            }
+
+            .container3_part3{
+                top:300px;
+            }
+
+
+            .container3_part1, .container3_part2, .container3_part3{
+                left:0px;
+            }
+
+            .container4{
+                width:480px;
+                margin-top:100px;
+                //border:10px solid black;
+                height:45vh;
+            }
+
+            .owl-carousel{
+                width:480px;
+                height:100%; 
+                //border:10px solid blue;
+            }
+
+            .owl-carousel img{
+                height:100%;
+            }
+
+            .image-wrapper{
+                height:100%; 
+                width:100%;
+                //border:10px solid red;
+            }
+
+            .image-wrapper img{
+                width:100%;
+                height:100%;
+            }
+
+            .banner{
+                width:300px;
+                height:280px;
+                top:0px;
+                left:150px;
+            }
+
+            .banner-header h2{
+                font-size:15px;
+            }
+
+            .banner-paragraph p{
+                font-size:10px;
+            }
+
+            /* container 5*/
+
+            .container5{
+                width:480px;
+                //border:10px solid red;
+            }
+
+            .container6{
+                //border:10px solid yellow;
+                width:95%;
+                padding:0px 3%;
+                margin-top:20px;
+            }
+
+            .container7{
+                width:480px;
+                //border:10px solid blue;
+                height:100vh;
+            }
+
+            .container7wrapper{
+                flex-direction:column; 
+            }
+
+            .container7left, .container7right{
+                width:100%; 
+            }
+
+            .container7leftcontent h2{
+                font-size:33px;
+            }
+
+            /* container 8*/
+
+            .container8{
+                //border:10px solid red; 
+            }
+
+            .eighthpane{
+                width:480px;
+            }
+
+            .eigthpane-header{
+                margin-top:0px;
+                width:480px;
+                text-align:center;
+                //border:10px solid black;
+                display:none;
+            }
+
+            .eigthpane-header h2{
+                margin-left:-280px;
+            }
+
+            .eigthpane-content{
+                flex-direction:column; 
+            }
+
+            .eigthpane-content-left, .eighthpane-content-right{
+                width:480px; 
+                //border:10px solid red;
+            }
         }
 
 
@@ -885,7 +1085,7 @@
     </div>
 
     <div class="container7">
-        <div class="container7wrapper" data-aos="fade-right" data-aos-duration="600">
+        <div class="container7wrapper" data-aos="fade-right " data-aos-duration="600">
             <div class="container7left">
                 <div class="container7leftcontent">
                     <span>Interesting Facts and Figures</span>
@@ -1001,6 +1201,10 @@
                 $(".navbar").removeClass("scrolling");
             }
         });
+
+
+
+        
 
 
 
